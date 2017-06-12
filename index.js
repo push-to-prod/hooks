@@ -35,6 +35,12 @@ require('./lib/rollbar')
       channel
     }
   }, {
+    register: require('./lib/bitbucket-event'),
+    options: {
+      env,
+      channel
+    }
+  }, {
     register: require('./lib/npm-event'),
     options: {
       env,
